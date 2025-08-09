@@ -1,1 +1,244 @@
-Hello world!
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人簡歷 | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 導航 -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">UIE47061</div>
+      <ul class="nav-links">
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#competitions">比賽經歷</a></li>
+        <li><a href="#projects">作品集</a></li>
+        <li><a href="#contact">聯絡</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          你好，我是
+          <span class="hero-gradient">UIE47061</span>
+        </h1>
+        <p class="hero-subtitle">全端開發者 & UI/UX 設計師</p>
+        <p class="hero-desc">
+          熱愛把創意轉化為真實體驗，專注於高效、美觀且具擴展性的應用程式。
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">看作品</a>
+          <a href="#contact" class="btn btn-outline">聯絡我</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-visual">
+          <div class="cube-container">
+            <div class="cube">
+              <div class="face front">React</div>
+              <div class="face back">Node.js</div>
+              <div class="face right">Three.js</div>
+              <div class="face left">MongoDB</div>
+              <div class="face top">Tailwind</div>
+              <div class="face bottom">Docker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">關於我</h2>
+
+      <div class="about-grid">
+        <!-- 左側文字 -->
+        <div class="about-text">
+          <h4 class="about-name">林佑亦</h4>
+          <p class="about-desc">
+            高中讀「北士商－資處科」，大學讀「北科大－資財系」。<br>
+            讀的雖然都與商管相關，但我也很喜歡軟硬體開發來製作各種東西；從韌體到前後端、
+            再到實體作品，都樂於動手實作與整合。
+          </p>
+
+          <div class="about-tags">
+            <span>軟硬體整合設計</span>
+            <span>PCB 設計</span>
+            <span>3D 建模</span>
+            <span>平面設計</span>
+          </div>
+        </div>
+
+        <!-- 右側照片 -->
+        <div class="about-photo">
+          <img
+            src="assets/images/about_me/UIE47061.JPG"
+            alt="林佑亦 個人照片"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitions -->
+  <section id="competitions" class="competitions">
+    <div class="container">
+      <h2 class="section-title">比賽經歷</h2>
+      <div class="competitions-grid">
+        <div class="competition-card" style="background-image: url('assets/images/competition/skills_competition.JPG');">
+          <div class="competition-header">
+            <span class="competition-year">2022</span>
+          </div>
+          <h3 class="competition-title">全國商業類技藝競賽 - 程式設計職種</h3>
+          <p class="competition-role">選手</p>
+          <p class="competition-desc">全國性的程式解題競賽，在時間內盡可能解出最多的題目</p>
+          <span class="competition-award">金手獎（第一名）</span>
+          <div class="competition-tech">
+            <span>Python</span><span>C</span><span>Algorithm</span>
+          </div>
+        </div>
+
+        <div class="competition-card" style="background-image: url('assets/images/competition/tea_coin.JPG');">
+          <div class="competition-header">
+            <span class="competition-year">2025</span>
+          </div>
+          <h3 class="competition-title">Hack To The Top - AI 金融創新黑客松</h3>
+          <p class="competition-role">全端工程師</p>
+          <p class="competition-desc">需在限定時間內運用 AI 技術開發解決方案，提升金融生活的效率與便利性。</p>
+          <span class="competition-award">特優獎（第二名）</span>
+          <div class="competition-tech">
+            <span>Flutter</span><span>app</span><span>firebase</span><span>AI</span>
+          </div>
+        </div>
+
+        <div class="competition-card" style="background-image: url('assets/images/competition/fira_sport_robot.jpeg');">
+          <div class="competition-header">
+            <span class="competition-year">2023</span>
+          </div>
+          <h3 class="competition-title">FIRA - Sport Robot</h3>
+          <p class="competition-role">隊長/軟硬體設計</p>
+          <p class="competition-desc">由國際機器人足球協會（FIRA）主辦的青少年機器人運動競賽，參賽機器人需沿著地面路線行進，並依據地面指示完成對應的運動任務。</p>
+          <span class="competition-award">全球第三名</span>
+          <div class="competition-tech">
+            <span>STM32</span><span>Arduino</span><span>德國比賽</span>
+          </div>
+        </div>
+
+        <div class="competition-card" style="background-image: url('assets/images/competition/fira_drc.PNG');">
+          <div class="competition-header">
+            <span class="competition-year">2023</span>
+          </div>
+          <h3 class="competition-title">FIRA - DRC</h3>
+          <p class="competition-role">隊長/軟硬體設計</p>
+          <p class="competition-desc">國際機器人足球協會（FIRA） 主辦的災害救援機器人挑戰賽，模擬真實災害現場的環境，讓自主機器人完成搜尋、救援與搬運等任務。</p>
+          <span class="competition-award">全球第二名</span>
+          <div class="competition-tech">
+            <span>STM32</span><span>Arduino</span><span>德國比賽</span>
+          </div>
+        </div>
+
+        <div class="competition-card" style="background-image: url('assets/images/competition/rcj_soccer.jpeg');">
+          <div class="competition-header">
+            <span class="competition-year">2024</span>
+          </div>
+          <h3 class="competition-title">RCJ - Soccer</h3>
+          <p class="competition-role">隊長/軟硬軔體設計</p>
+          <p class="competition-desc">是 RoboCup Junior的一個比賽項目，模擬 2 對 2 的足球賽，由兩台自主機器人組成一隊，在圓形賽場上爭奪紅外線發光球並射入對方球門。</p>
+          <span class="competition-award">完成賽事</span>
+          <div class="competition-tech">
+            <span>STM32</span><span>Arduino</span><span>荷蘭比賽</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">精選作品</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://picsum.photos/600/400?random=1" alt="Project 1" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>智慧農業平台</h3>
+            <p>IoT 監控與資料分析，提升作物產量 30%</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://picsum.photos/600/400?random=2" alt="Project 2" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI 學習助手</h3>
+            <p>即時語音辨識與個人化學習路徑規劃</p>
+            <div class="project-tech"><span>Vue</span><span>Python</span><span>FastAPI</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://picsum.photos/600/400?random=3" alt="Project 3" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>3D 資料視覺化</h3>
+            <p>使用 Three.js 呈現沉浸式資料探索體驗</p>
+            <div class="project-tech"><span>Three.js</span><span>D3.js</span><span>WebGL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">聯絡我</h2>
+      <p class="contact-desc">有想法或合作邀約？一起聊聊吧！</p>
+      <a href="mailto:UIE47061@example.com" class="btn btn-primary">Send Email</a>
+      <div class="socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 UIE47061. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
