@@ -468,6 +468,40 @@ body {
   border-radius: 50px;
 }
 
+/* Project Filter Buttons */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid var(--clr-muted);
+  color: var(--clr-muted);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.filter-btn.active {
+  background: var(--clr-primary);
+  color: #000;
+  border-color: var(--clr-primary);
+  font-weight: 600;
+}
+
+
 /* Contact */
 .contact {
   padding: 6rem 0;

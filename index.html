@@ -1,3 +1,4 @@
+
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
@@ -185,9 +186,19 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2 class="section-title">精選作品</h2>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="software">軟體</button>
+        <button class="filter-btn" data-filter="hardware">硬體</button>
+        <button class="filter-btn" data-filter="design">平面設計</button>
+        <button class="filter-btn" data-filter="other">其他</button>
+      </div>
+
       <div class="projects-grid">
 
-        <div class="project-card">
+        <div class="project-card" data-category="software hardware">
           <div class="project-img">
             <img src="assets/images/projects/robot_dog.PNG" alt="Project 1" />
             <div class="project-overlay">
@@ -202,7 +213,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-category="hardware">
           <div class="project-img">
             <img src="assets/images/projects/3d_printer.JPG" alt="Project 2" />
             <div class="project-overlay">
@@ -217,11 +228,26 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-category="software">
           <div class="project-img">
             <img src="assets/images/projects/map_designer.png" alt="Project 3" />
             <div class="project-overlay">
               <a href="https://uie47061.neocities.org/map_designer/" class="project-link" aria-label="Demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>地圖設計器</h3>
+            <p>使用網頁來預先排版地圖，這樣才不需要將地圖移來移去即可查看效果．</p>
+            <div class="project-tech"><span>Html</span><span>JavaScript</span><span>css</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="project-img">
+            <img src="assets/images/projects/cookie.png" alt="Project 3" />
+            <div class="project-overlay">
+              <a href="assets/images/projects/cookie.png" class="project-link" aria-label="Demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
               <a href="#" class="project-link" aria-label="Code"><i class="fab fa-github"></i></a>
             </div>
           </div>
